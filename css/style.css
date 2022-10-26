@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid red;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+.toggle-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.side-window {
+    width: 300px;
+    height: 100vh;
+    background: silver;
+    transition: transform .3s;
+    transform: translateX(-100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.toggle-btn-close {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.active {
+    transform: translateX(0);
+}
